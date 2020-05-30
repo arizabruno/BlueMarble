@@ -5,7 +5,9 @@ body {
 }
 
 .leaflet-container {
-    background: rgb(5, 2, 38) !important;
+    /* background: rgb(5, 2, 38) !important; */
+    background-image: url("https://1-background.com/images/stars-1/beautiful-blue-stars-fill.jpg") !important;
+    background-size: 100px !important;
 }
 
 #earth_div {
@@ -14,6 +16,47 @@ body {
     bottom: 0;
     left: 0;
     position: absolute !important;
+}
+
+.popImg {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.popButton {
+    background-color: dodgerblue;
+    padding: 5px;
+    color: white;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.popTitle {
+    font-size: 20px;
+    font-weight: bold;
+    color: dodgerblue;
+    text-align: center;
+}
+
+.popName {
+    font-weight: bold;
+    text-align: center;
+}
+
+.popTheme {
+    text-align: center;
+}
+
+.popLang {
+    text-align: center;
+}
+
+.popBody {
+    max-width: 300px;
+    text-align: center;
+    padding: 10px;
 }
 
 #footer {
@@ -46,7 +89,7 @@ body {
 }
 
 #logo {
-    height: 300px;
+    height: 200px;
     margin: 0 auto;
 }
 
