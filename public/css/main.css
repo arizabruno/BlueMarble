@@ -1,0 +1,101 @@
+body {
+    background-color: rgb(5, 2, 38);
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.leaflet-container {
+    background: rgb(5, 2, 38) !important;
+}
+
+#earth_div {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute !important;
+}
+
+#footer {
+    color: rgba(255, 255, 255, 0.178);
+    bottom: 0;
+    text-align: center;
+    width: 100vw;
+    padding: 20px 0px;
+}
+
+#nav {
+    padding: 20px;
+    display: flex;
+}
+
+#nav2 {
+    padding: 20px;
+    position: absolute;
+    z-index: 99999;
+    display: flex;
+    width: 90vw;
+    justify-content: flex-end;
+}
+
+.logoTop {
+    position: absolute;
+    z-index: 99999;
+    padding: 20px;
+    right: 0;
+}
+
+#logo {
+    height: 300px;
+    margin: 0 auto;
+}
+
+#logo2 {
+    height: 50px;
+}
+
+#topFlex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+#title {
+    color: white;
+    font-size: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.button {
+    background-color: tomato;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    min-width: 300px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 5px;
+    height: 30px;
+    line-height: 30px;
+    color: white;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: rgb(55, 50, 117);
+}
+
+.primary {
+    background-color: rgb(83, 0, 236);
+}
+
+.secondary {
+    background-color: rgb(0, 60, 128);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
