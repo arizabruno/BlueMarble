@@ -6,20 +6,6 @@ const port = 5000;
 
 app.use(express.json());
 
-function firstThreeSentences(text) {
-    var j = 0;
-    var r = '';
-    for (var i = 0; i < text.length; i++) {
-        if(text.charAt(i) === '.') {
-            j++;
-        }
-        if(j === 3) {
-            return r;
-        }
-        r += text.charAt(i);
-      }
-}
-
 // Routes
 
 app.get('/', (req, res) => {

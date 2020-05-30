@@ -8,11 +8,10 @@ function firstThreeSentences(text) {
         if(text.charAt(i) === '.') {
             j++;
         }
+        r += text.charAt(i);
         if(j === 3) {
-            r += text.charAt(i);
             return r;
         }
-        r += text.charAt(i);
       }
 }
 
