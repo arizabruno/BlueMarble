@@ -15,3 +15,6 @@ We used a couple of APIs to build the app. It's core was made using HTML, CSS an
 ## COVID MAP
 
 The COVID Map was build over the trackcorona.live/api - enabling users to enter a video-call room for each country. While exploring the map, users can navigate through Nasa's night lights map and learn about the coronavirus situation on each country (confirmed cases, deaths and recovered cases). 
+
+## PWA
+The app is also offered as a Progressive Web App.
