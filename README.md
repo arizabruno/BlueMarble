@@ -6,11 +6,26 @@ Project built for the 2020 NASA Space Apps Challenge
 
 ## Basics
 
-The BlueMarble App enables users to create video-call rooms and share them with the world. Each room is open for up to 3 hours, with a marker in an approximate coordinate. Users can choose their language, theme, description and title.
+The BlueMarbleApp has the purpose to connect people around the world, especially during this tough time of social isolation. Users are able to create or join a live conference and share their experiences. They can also join a conference with astronauts, who will talk about the Astronomic Picture of the Day which is retrieved from NASA's API, while keeping them company during their journey in space.
+
+The app also displays facts, using worldwide data from NASA's open-sources, addressing the changes that occurred in the environment during this isolation period and up-to-date information about the COVID-19.
 
 ## APIs 
 
 We used a couple of APIs to build the app. It's core was made using HTML, CSS and Javascript - with a NoSQL database on Google Firebase Real-time database. The external-api from Jitsi Meet was used to achive video-call capabilities. NASA's imagery were used across to app.
+
+Resources used: 
+
+- neo.sci.gsfc.nasa.gov
+- earthobservatory.nasa.gov
+- giovanni.gsfc.nasa.gov
+- api.nasa.gov
+- trackcorona.live/api
+- emojipedia.org/
+- meet.jit.si/external_api.js
+- Google firebase
+- surge.sh
+
 
 ## COVID MAP
 
