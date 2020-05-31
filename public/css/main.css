@@ -18,19 +18,42 @@ body {
     position: absolute !important;
 }
 
+.outImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .popImg {
-    width: 300px;
+    width: 200px;
     border-radius: 10px;
+}
+
+.popDate {
+    font-size: 10px;
+    text-align: center;
+}
+
+.popDateLeft {
+    font-size: 10px;
+    color: red;
+    text-align: center;
 }
 
 .popButton {
     background-color: dodgerblue;
-    padding: 5px;
+    padding: 20px;
     color: white;
     text-align: center;
     line-height: 20px;
     border-radius: 10px;
     margin: 5px;
+    font-size: 17px;
+}
+
+.popButton:hover {
+    background-color: rgb(25, 88, 151);
 }
 
 .popTitle {
@@ -63,7 +86,7 @@ body {
     color: rgba(255, 255, 255, 0.178);
     bottom: 0;
     text-align: center;
-    width: 100vw;
+    width: 97vw;
     padding: 20px 0px;
 }
 
@@ -85,30 +108,168 @@ body {
     position: absolute;
     z-index: 99999;
     padding: 20px;
+    left: 0;
+    bottom: 0;
+}
+
+.info {
+    position: absolute;
+    z-index: 99999;
+    padding: 20px;
     right: 0;
+    top: 0;
+    height: 40px;
+}
+
+.info:hover {
+    cursor: pointer;
+}
+
+.backTop {
+    position: absolute;
+    z-index: 99999;
+    padding: 20px 10px;
+    left: 0;
+    top: 0;
+    font-size: 20px;
+    color: white;
+    font-weight: bold !important;
+    text-shadow: 2px 2px 8px rgb(0, 0, 0);
+}
+
+.backTop:hover {
+    cursor: pointer;
+    color: dodgerblue;
+}
+
+.logoTopM {
+    position: absolute;
+    z-index: 99999;
+    padding: 20px;
+    left: 90px;
+    bottom: 0;
+}
+
+#edge {
+    position: absolute;
+    z-index: 999;
+    left: 0;
+    bottom: 0;
+    height: 230px;
 }
 
 #logo {
-    height: 200px;
+    height: 300px;
     margin: 0 auto;
 }
 
 #logo2 {
-    height: 50px;
+    height: 70px;
+}
+
+#logo3 {
+    height: 70px;
+}
+
+#topics {
+    color: white;
+    padding-left: 10px;
+}
+
+#left {
+    width: fit-content;
+}
+
+#right {
+    width: fit-content;
+    padding-right: 50px;
 }
 
 #topFlex {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     padding: 30px;
+    margin: 0 auto;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+#form {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+#btnCreate {
+    margin: 0 auto;
+    background-color: dodgerblue;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    line-height: 20px;
+    font-size: 17px;
+    border-radius: 10px;
+    margin: 5px;
+    margin-bottom: 100px;
+}
+
+#btnCreate:hover {
+    cursor: pointer;
+    background-color: rgb(31, 97, 163);
+}
+
+.title {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+input {
+    background-color: rgb(30, 30, 56);
+    padding: 10px;
+    font-size: 17px;
+    border: none;
+    margin: 10px;
+    border-radius: 5px;
+    color: white;
+    width: 300px;
+}
+
+textarea {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(30, 30, 56);
+    padding: 10px;
+    font-size: 17px;
+    border: none;
+    margin: 10px;
+    border-radius: 5px;
+    color: white;
+    resize: none;
+    width: 300px;
+    height: 90px;
+}
+
+input:focus {
+    outline: none;
+    background-color: rgb(18, 18, 43);
+}
+
+textarea:focus {
+    outline: none;
+    background-color: rgb(18, 18, 43);
 }
 
 #title {
     color: white;
-    font-size: 50px;
-    margin-bottom: 50px;
-    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+#bFlex {
+    display: flex;
 }
 
 .button {
@@ -116,7 +277,7 @@ body {
     padding: 20px;
     font-size: 20px;
     font-weight: bold;
-    min-width: 300px;
+    width: fit-content;
     text-align: center;
     border-radius: 10px;
     margin: 5px;
@@ -127,7 +288,7 @@ body {
 
 .button:hover {
     cursor: pointer;
-    background-color: rgb(55, 50, 117);
+    background-color: dodgerblue;
 }
 
 .primary {
@@ -141,4 +302,228 @@ body {
 a {
     text-decoration: none;
     color: white;
+}
+
+.loader {
+    background-image: url("../img/logo.svg");
+    /* Blue */
+    border-radius: 50%;
+    width: 220px;
+    height: 220px;
+    animation: spin 2s linear infinite;
+}
+
+#formScreen {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    /* display: flex; */
+    justify-content: center;
+    display: none;
+    z-index: 9999999;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.label {
+    color: white;
+    text-align: center;
+    margin: 10px;
+}
+
+.custom-select {
+    position: relative;
+    font-family: Arial;
+    margin: 0 auto;
+    margin-top: 10px;
+    transform: translateX(-10px);
+}
+
+.custom-select select {
+    display: none;
+    /*hide original SELECT element:*/
+}
+
+.select-selected {
+    border-radius: 10px;
+    background-color: DodgerBlue;
+    height: 30px;
+    line-height: 30px;
+    width: 288px;
+}
+
+
+/*style the arrow inside the select element:*/
+
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 20px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+}
+
+
+/*point the arrow upwards when the select box is open (active):*/
+
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+}
+
+
+/*style the items (options), including the selected item:*/
+
+.select-items div,
+.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 5px;
+}
+
+
+/*style items (options):*/
+
+.top {
+    z-index: 99999;
+}
+
+.select-items {
+    position: absolute;
+    background-color: DodgerBlue;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border-radius: 5px;
+    padding: 20px 0px;
+    width: 320px;
+}
+
+
+/*hide the items when the select box is closed:*/
+
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#media {
+    display: flex;
+    justify-content: center;
+}
+
+.media {
+    height: 35px;
+    margin: 10px;
+    opacity: 0.7;
+}
+
+.blue {
+    color: dodgerblue;
+}
+
+@media only screen and (max-width: 900px) {
+    #topFlex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+        margin: 0 auto;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    #bFlex {
+        flex-direction: column;
+    }
+    #logo {
+        height: 200px;
+    }
+    #right {
+        padding: 0;
+    }
+    #left {
+        padding: 0;
+    }
+    #title {
+        padding-top: 20px;
+        font-size: 30px;
+        text-align: center;
+    }
+    #topics {
+        width: 200px;
+    }
+    .button {
+        width: 200px;
+    }
+}
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    /* Full width */
+    width: 100vw;
+    height: 80%;
+    /* Black w/ opacity */
+    z-index: 99999999;
+    position: absolute;
+}
+
+.par {
+    line-height: 25px;
+}
+
+
+/* Modal Content */
+
+.modal-content {
+    overflow: hidden;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: none;
+    width: 300px;
+    border-radius: 10px;
+}
+
+
+/* The Close Button */
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
 }

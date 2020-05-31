@@ -11,8 +11,6 @@ width: 100vw;">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
-    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-database.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin="" />
     <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
     <title>BlueMarble</title>
@@ -25,37 +23,31 @@ width: 100vw;">
         <div class="modal-content">
             <span class="close">&times;</span>
             <div class="par">
-                <span class="blue" style="font-size: 20px;"> You are in the BlueMarble main map!</span>
+                <span class="blue" style="font-size: 20px;"> Welcome to the COVID-19 map!</span>
                 <p>
-                    Here you can connect with people from all over the world. If you want to get to know more about each room, just click on the avatars.
-                </p>
-                <p>
-                    If you are in the mood for some inter-galactic facts, just click on the 👩‍🚀 and start chatting with a <span class="blue">REAL</span> astronaut.
-                </p>
-                <p>
-                    By clicking on our theme map 🦠, you can check recent <span class="blue">COVID-19</span> data and enter dicussion rooms for each country. You can also talk about the environmental changes that occurred during the <span class="blue">COVID-19</span>,
-                    just click in the magnifier 🔍.
+                    Here you can learn more about how the <span class="blue">COVID-19</span> has impacted the lives of people from different parts of the world. Click on the virus 🦠 to check out <span class="blue">COVID-19</span> data and enter in a
+                    room to discuss with locals this reality.
+
                 </p>
             </div>
         </div>
 
     </div>
-    <!-- <img src="./img/edge.png" id="edge"> -->
     <img class="info" onclick="openModal()" src="./img/info.svg" alt="">
     <a href="index.html">
+        <div class="backTop">
+            &#9001; Back </div>
+    </a>
+    <a href="map.html">
         <div class="backTop">
             &#9001; Back </div>
     </a>
     <a href="index.html">
         <img class="logoTop" id="logo2" src="./img/logo.svg">
     </a>
-    <a href="covid.html">
-        <img class="logoTopM" id="logo2" src="./img/microbe.png">
-    </a>
     <div style="height: 100%;
     width: 100vw;" id="mapid"></div>
-    <script src="./js/app.js"></script>
-    <script src="./js/map.js"></script>
+    <script src="./js/covid.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 

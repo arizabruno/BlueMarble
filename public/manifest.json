@@ -1,0 +1,11 @@
+{
+  "name": "BlueMarble",
+  "short_name": "BlueMarble",
+  "theme_color": "#2196f3",
+  "background_color": "#2196f3",
+  "display": "standalone",
+  "Scope": "/",
+  "start_url": "/map.html",
+  "icons": null,
+  "splash_pages": null
+}
