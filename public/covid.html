@@ -3,10 +3,25 @@
 width: 100vw;">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168108080-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-168108080-1');
+    </script>
+
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://bluemarble.surge.sh/images/icons/icon-72x72.png" />
+    <link rel="apple-touch-icon" href="https://bluemarble.surge.sh/images/icons/icon-144x144.png" />
     <link rel="manifest" href="manifest.json">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
@@ -20,15 +35,17 @@ width: 100vw;">
     <div id="myModal" class="modal">
 
         <!-- Modal content -->
-        <div class="modal-content">
+        <div class="modal-content" style="background-color: black; color: white;">
             <span class="close">&times;</span>
             <div class="par">
                 <span class="blue" style="font-size: 20px;"> Welcome to the COVID-19 map!</span>
                 <p>
-                    Here you can learn more about how the <span class="blue">COVID-19</span> has impacted the lives of people from different parts of the world. Click on the virus 🦠 to check out <span class="blue">COVID-19</span> data and enter in a
-                    room to discuss with locals this reality.
-
+                    Here you can learn more about how the <span class="blue">coronavirus</span> has impacted the lives of people from different parts of the world. Click on the virus 🦠 to check out <span class="blue">COVID-19</span> data and enter in
+                    a room to discuss with locals this reality.
                 </p>
+                <span style="font-size: 15px; font-style: italic;">
+                    The map layer is offered by NASA's Global Imagery Browse Services - showing the Earth at night - referred to as "Night Lights" - sometimes called "Black Marble". Most of the lights presented come from cites all over the world 💡
+                </span>
             </div>
         </div>
 
@@ -47,8 +64,8 @@ width: 100vw;">
     </a>
     <div style="height: 100%;
     width: 100vw;" id="mapid"></div>
-    <script src="./js/covid.js"></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/covid.js"></script>
 </body>
 
 </html>

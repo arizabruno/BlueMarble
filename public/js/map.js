@@ -211,17 +211,17 @@ let magData = [{
         "body": "Did you know? South America presented a reduced amount of CH4 in the atmosphere from 2019 to 2020",
         "link": "https://firebasestorage.googleapis.com/v0/b/blue-marble-app.appspot.com/o/gif1.gif?alt=media&token=33cffdb1-60d4-4533-9946-a6705c211c5e",
         "cont": "South America",
-        "source": "Source: https://giovanni.gsfc.nasa.gov"
+        "source": "https://giovanni.gsfc.nasa.gov"
 
 
     },
     {
         "lon": -101.567478,
         "lat": 37.7185903,
-        "body": "Did you know? There was a normalization of temperature in March 2020 compared to the same period last year",
-        "link": "https://firebasestorage.googleapis.com/v0/b/blue-marble-app.appspot.com/o/ezgif.com-video-to-gif.gif?alt=media&token=1b4577a9-183a-4526-94a1-2e0b9394c638",
+        "body": "Did you know? The vegetation index presented an improvement from March 2019, to March 2020.",
+        "link": "https://firebasestorage.googleapis.com/v0/b/blue-marble-app.appspot.com/o/Gif%20USA%20Oficial.gif?alt=media&token=e7241507-4eea-49ea-8c81-26b6794a1f86",
         "cont": "North America",
-        "source": "Source: https://neo.sci.gsfc.nasa.gov"
+        "source": "https://neo.sci.gsfc.nasa.gov"
 
 
     },
@@ -229,9 +229,9 @@ let magData = [{
         "lon": 39.375,
         "lat": 52.6963611,
         "body": "Did you know? From March of 2019 to March 2020, the vegetation index had a significant improvement",
-        "link": "https://firebasestorage.googleapis.com/v0/b/blue-marble-app.appspot.com/o/ezgif.com-video-to-gif%20(1).gif?alt=media&token=1b4577a9-183a-4526-94a1-2e0b9394c638",
+        "link": "https://firebasestorage.googleapis.com/v0/b/blue-marble-app.appspot.com/o/Gif%20Europa%20Oficial.gif?alt=media&token=5de1e8ce-ab1d-4b92-82e5-a43fa5231c3b",
         "cont": "Europe/Asia",
-        "source": "Source: https://neo.sci.gsfc.nasa.gov"
+        "source": "https://neo.sci.gsfc.nasa.gov"
 
     },
     {
@@ -240,7 +240,7 @@ let magData = [{
         "body": "Did you know? The emission of NO2 was considerably reduced between January and February from 2020",
         "link": "https://firebasestorage.googleapis.com/v0/b/blue-marble-app.appspot.com/o/ezgif.com-video-to-gif%20(4).gif?alt=media&token=1b4577a9-183a-4526-94a1-2e0b9394c638",
         "cont": "Asia",
-        "source": "Source: https://earthobservatory.nasa.gov"
+        "source": "https://earthobservatory.nasa.gov"
 
     },
     {
@@ -249,7 +249,7 @@ let magData = [{
         "body": "Did you know? The amount of CH4 in the atmosphere is gradually decreasing in Oceania",
         "link": "https://firebasestorage.googleapis.com/v0/b/blue-marble-app.appspot.com/o/ezgif.com-video-to-gif%20(2).gif?alt=media&token=1b4577a9-183a-4526-94a1-2e0b9394c638",
         "cont": "Oceania",
-        "source": "Source: https://giovanni.gsfc.nasa.gov"
+        "source": "https://giovanni.gsfc.nasa.gov"
 
 
     },
@@ -259,7 +259,7 @@ let magData = [{
         "body": "Did you know? In March 2020, there was a significant decrease in the abnormal temperatures that were occurring in the same period of last year.",
         "link": "https://firebasestorage.googleapis.com/v0/b/blue-marble-app.appspot.com/o/ezgif.com-video-to-gif%20(5).gif?alt=media&token=1b4577a9-183a-4526-94a1-2e0b9394c638",
         "cont": "Africa",
-        "source": "Source: https://neo.sci.gsfc.nasa.gov"
+        "source": "https://neo.sci.gsfc.nasa.gov"
 
 
     }
@@ -273,7 +273,7 @@ magData.forEach(element => {
 <div class="popTheme blue">${element.cont}</div>
 <div class="popBody">${element.body}</div>
 <div class="outImg">
-<div class="popCopy blue">${element.source}</div>
+<a class="popCopy blue" target="_blank" href="${element.source}">Source</a>
 <img class="popImg" src='${element.link}'/>
 </div>
 <a href="room.html?key=${encode((element.body).substring(0,30))}" target="_blank">
@@ -294,12 +294,14 @@ function returnLang(lang) {
     } else if (intLang === 3) {
         return "Spanish"
     } else if (intLang === 4) {
-        return "Chinese"
+        return "French"
     } else if (intLang === 5) {
-        return "Japanese"
+        return "Chinese"
     } else if (intLang === 6) {
-        return "Russian"
+        return "Japanese"
     } else if (intLang === 7) {
+        return "Russian"
+    } else if (intLang === 8) {
         return "Hindi"
     } else {
         return null
@@ -319,6 +321,12 @@ function returnTheme(theme) {
         return "Environment 🌳"
     } else if (intTheme === 5) {
         return "Space 🚀"
+    } else if (intTheme === 6) {
+        return "Sports ⚽️"
+    } else if (intTheme === 7) {
+        return "Health 🏥"
+    } else if (intTheme === 8) {
+        return "Networking 🌎"
     } else {
         return null
     }
