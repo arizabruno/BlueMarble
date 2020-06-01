@@ -1,5 +1,7 @@
 # BlueMarble
 
+Fully functional platform link: [BlueMarble](https://bluemarbleapp.us)
+
 ## App Project
 
 Project built for the 2020 NASA Space Apps Challenge
