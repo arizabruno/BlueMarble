@@ -173,7 +173,7 @@ function returnIcon(avatar) {
 let spaceMarker = L.marker([-14, -15], { icon: space }).addTo(map)
 spaceMarker.setZIndexOffset(100)
 
-fetch("https://api.nasa.gov/planetary/apod?api_key=sV6GZxy33Ie3IDPsXyIdBqkhkYyiFXf6LYkDONCm")
+fetch("https://api.nasa.gov/planetary/apod?api_key=" + API_KEY)
     .then(data => data.json())
     .then(data => {
 
